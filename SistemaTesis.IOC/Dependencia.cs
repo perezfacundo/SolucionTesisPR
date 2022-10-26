@@ -11,6 +11,7 @@ using Microsoft.EntityFrameworkCore;
 using SistemaTesis.DAL;
 
 
+
 namespace SistemaTesis.IOC
 {
     public static class Dependencia
