@@ -16,5 +16,6 @@ namespace SistemaTesis.IOC
     public static class Dependencia
     {
 
+
     }
 }
