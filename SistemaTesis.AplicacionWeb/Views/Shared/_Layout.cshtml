@@ -54,13 +54,15 @@
                 </a>
                 <div id="collapseAdministracion" class="collapse" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="usuarios.html">Usuarios</a>
-                        <a class="collapse-item" href="negocio.html">Negocio</a>
+                        <a class="collapse-item" href="usuarios.html">Solicitudes</a>
+                        <a class="collapse-item" href="negocio.html">Clientes</a>
+                        <a class="collapse-item" href="negocio.html">Empleados</a>
+                        <a class="collapse-item" href="negocio.html">Transportes</a>
                     </div>
                 </div>
             </li>
 
-            <!-- Nav Item - Inventario Collapse Menu -->
+            <!-- Nav Item - Inventario Collapse Menu 
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseInventario">
                     <i class="fas fa-fw fa-clipboard-list"></i>
@@ -72,18 +74,18 @@
                         <a class="collapse-item" href="productos.html">Productos</a>
                     </div>
                 </div>
-            </li>
+            </li>-->
 
             <!-- Nav Item - Venta Collapse Menu -->
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseVenta">
                     <i class="fas fa-fw fa-tags"></i>
-                    <span>Ventas</span>
+                    <span>Viajes</span>
                 </a>
                 <div id="collapseVenta" class="collapse" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="nueva_venta.html">Nueva Venta</a>
-                        <a class="collapse-item" href="historial_venta.html">Historial Venta</a>
+                        <a class="collapse-item" href="nueva_venta.html">Nuevo viaje</a>
+                        <a class="collapse-item" href="historial_venta.html">Historial de viajes</a>
                     </div>
                 </div>
             </li>
@@ -96,7 +98,7 @@
                 </a>
                 <div id="collapseReportes" class="collapse" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="reporte_venta.html">Reporte de Ventas</a>
+                        <a class="collapse-item" href="reporte_venta.html">Reporte de Viajes</a>
                     </div>
                 </div>
             </li>
@@ -193,3 +195,12 @@
     @await RenderSectionAsync("Scripts ", required: false)
 </body>
 </html>
+
+@section Scripts{
+
+    <script src="~/vendor/chart.js/Chart.min.js"></script>
+
+    <!-- SOLO ES DE EJEMPLO - IGNORAR -->
+    <script src="~/js/vistas/chart-bar-demo.js"></script>
+    <script src="~/js/vistas/chart-pie-demo.js"></script>
+}
