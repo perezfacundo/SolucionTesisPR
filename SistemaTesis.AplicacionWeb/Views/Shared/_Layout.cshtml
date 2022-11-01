@@ -54,10 +54,10 @@
                 </a>
                 <div id="collapseAdministracion" class="collapse" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="usuarios.html">Solicitudes</a>
-                        <a class="collapse-item" href="negocio.html">Clientes</a>
-                        <a class="collapse-item" href="negocio.html">Empleados</a>
-                        <a class="collapse-item" href="negocio.html">Transportes</a>
+                        <a class="collapse-item" href="@Url.Action("Index", "Solicitud")">Solicitudes</a>
+                        <a class="collapse-item" href="@Url.Action("Index", "Cliente")">Clientes</a>
+                        <a class="collapse-item" href="@Url.Action("Index", "Empleado")">Empleados</a>
+                        <a class="collapse-item" href="@Url.Action("Index", "Transporte")">Transportes</a>
                     </div>
                 </div>
             </li>
@@ -80,12 +80,12 @@
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseVenta">
                     <i class="fas fa-fw fa-tags"></i>
-                    <span>Viajes</span>
+                    <span>Solicitudes</span>
                 </a>
                 <div id="collapseVenta" class="collapse" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item" href="nueva_venta.html">Nuevo viaje</a>
-                        <a class="collapse-item" href="historial_venta.html">Historial de viajes</a>
+                        <a class="collapse-item" href="@Url.Action("NuevaSolicitud", "Solicitud")">Nueva solicitud</a>
+                        <a class="collapse-item" href="@Url.Action("HistorialSolicitudes", "Solicitud")">Historial de solicitudes</a>
                     </div>
                 </div>
             </li>
@@ -198,9 +198,24 @@
 
 @section Scripts{
 
+    <!-- ------------------------------------------------------VISTA DASHBOARD -->
     <script src="~/vendor/chart.js/Chart.min.js"></script>
 
     <!-- SOLO ES DE EJEMPLO - IGNORAR -->
     <script src="~/js/vistas/chart-bar-demo.js"></script>
     <script src="~/js/vistas/chart-pie-demo.js"></script>
+
+    <!-- ------------------------------------------------------VISTA CLIENTES -->
+    <script src="~/vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+    <script src="~/vendor/datatables/extensiones/js/dataTables.responsive.min.js"></script>
+
+    <script src="~/vendor/datatables/extensiones/js/dataTables.buttons.min.js"></script>
+    <script src="~/vendor/datatables/extensiones/js/jszip.min.js"></script>
+    <script src="~/vendor/datatables/extensiones/js/buttons.html5.min.js"></script>
+    <script src="~/vendor/datatables/extensiones/js/buttons.print.min.js"></script>
+
+    <!-- SOLO ES DE EJEMPLO - IGNORAR -->
+    <script src="~/js/vistas/datatables-demo.js"></script>
 }
